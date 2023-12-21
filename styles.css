@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@font-face {
+  font-family: "Trajan", monospace;
+  src: url("Trajan_Pro_3_Regular.otf");
+}
+
+:root {
+  --black: #080d13;
+  --gray-text: #c8c5c0;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Trajan", monospace;
+  font-size: 1.2rem;
+}
+p, a {
+  color: var(--gray-text);
+}
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#intro {
+  text-align: center;
+}
+
+#introduction {
+  font-weight: bold;
+}
+#terminal {
+  background-color: #0a0d12;
+  padding: 10px;
+  margin: 3% auto 0 auto;
+  width: 90%;
+  border: 5px solid #5d5d5f;
+  box-shadow: -2px 2px 0 0 #202121, 2px -2px 0 0 #333534;
+  /*box-shadow: -2px 2px 0 0 #f82f9a, 2px -2px 0 0 #14c1c1;*/
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.query {
+  display: inline-block;
+  padding: 5px;
+}
+  input.query {
+    margin-left: 10px;
+  }
+
+input {
+  background-color: #141415;
+}
+input, #cat-text {
+  color: var(--gray-text);
+  text-align: center;
+  outline: none;
+}
+  /* Chrome, Safari, Edge, Opera */
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none;
+      appearance: none; 
+  }
+  /* Firefox */
+  input[type=number] {
+      -moz-appearance: textfield;
+  }
+
+button {
+  background-color: transparent /*#181822*/;
+  border: 2px solid transparent;
+  padding: 10px;
+  margin-left: 10px;
+  color: var(--gray-text);
+  font-family: "Trajan", monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+  button:hover {
+    border-bottom: 2px solid var(--gray-text);
+  }
+
+#result {
+  padding-bottom: 1%;
+}
+#result > p, #result > p > span {
+  text-align: center;
+}
+  #demo {
+    color: #69a0d5;
+  }
+  #blinker {
+    animation: blinker 1.1s infinite;
+    font-weight: bold;
+    display: unset;
+  }
+  @keyframes blinker {
+    0% { opacity: 0 }
+    49% { opacity: 0 }
+    50% { opacity: 1 }
+  }
+
+#star, #shell {
+  display: none;
+  margin-left: 50%;
+  position: absolute;
+  font-size: 50px;
+  text-align: center;
+}
+
+#cat-image {
+  margin-left: 20%;
+  width: 270px;
+}
+#cat-text {
+  background: url(screen.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  border-bottom: 1px solid #333;
+  padding: 1% 1% 0 1%;
+  width: 350px;
+  clip-path: polygon(0 100%, 100% 100%, 100% 19%, 46% 18%, 15% 0, 16% 21%, 0 22%);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 767px) {
+  #introduction, #functions-txt, #cat-image {
+    margin-left: auto;
+  }
+  p {
+    font-size: 14px;
+  }
+  #terminal, #cat-text {
+    width: fit-content;
+  }
+  #cat-image {
+    width: 170px;
+    margin-left: 20%;
+  }
+  #cat-text {
+    clip-path: none;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithms Playground</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="intro">
+    <p id="introduction">C:\Users\Maria-Cristina>Algorithms.js<span id="blinker">_</span></br>
+    Connected! Access granted. Session initiated.</p>
+    <p id="functions-txt"><span id="exercises-number"></span> functions ready ...</p>
+  </div>
+  <div id="terminal">
+    <p class="query">> Enter a number</p>
+    <input class="query" id="number" type="number" placeholder="Type your number here ...">
+    <p>> Choose one option to transform your input ...</p>
+    <button type="submit" onclick="switchLastDigits()">Reverse last 2 digits</button>
+    <button type="submit" onclick="reverseNumbers()">Reverse all numbers</button>
+    <button type="submit" onclick="fibonacci()">Display Fibonacci Sequence</button>
+    <button type="submit" onclick="pyramid()">Pyramid pattern</button>
+    <button type="submit" onclick="pyramidReverse()">Upside down pyramid pattern</button>
+    <button type="submit" onclick="rectangle()">Rectangle shape</button>
+    <br>
+    <div id="result">
+      <p><span id="parity"></span> RESULT</p>
+      <p id="demo">
+        <span>?</span>
+      </p>
+    </div>
+  </div>
+  <img id="cat-image" src="meow.png" alt="Image of a cat saying meow">
+  <div id="cat-text"><p><a href="https://luna-catbot.netlify.app/" target="_blank">LUNA</a> says hello.</p></div>
+  <script src="script.js"></script>
+</body>
+</html>
