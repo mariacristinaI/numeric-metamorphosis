@@ -11,10 +11,12 @@
   <div id="intro">
     <p id="introduction">C:\Users\Maria-Cristina>Algorithms.js<span id="blinker">_</span></br>
     Connected! Access granted. Session initiated. Terminal activated.</p>
-    <p id="functions-txt"><span id="exercises-number"></span> functions ready. 6 commands available ...</p>
+    <p id="functions-txt"><span id="exercises-number"></span> functions ready. 7 commands available ...</p>
   </div>
   <div id="window">
     <div id="window-menubar">
+      <button onclick="openTerminal('terminal')" class="window-tab">Numbers</button>
+      <button onclick="openTerminal('terminal1')" class="window-tab">Lists</button>
       <div id="window-buttons">
         <button>—</button>
         <button>☐</button>
@@ -23,7 +25,7 @@
     </div>
     <div id="terminal">
       <p class="query">> Enter a number</p>
-      <input class="query" id="number" type="number" placeholder="Type your number here ...">
+      <input class="query" id="number" type="number" placeholder="...">
       <p>> Choose one option to transform your input ...</p>
       <button type="submit" onclick="switchLastDigits()">Reverse last 2 digits</button>
       <button type="submit" onclick="reverseNumbers()">Reverse all numbers</button>
@@ -39,9 +41,19 @@
         </p>
       </div>
     </div>
+    <div id="terminal1">
+      <p class="query">> Display a list from 1 to</p><input class="query" id="list-number" type="number" title="only numbers!" placeholder="Type your number here ...">
+      <p>> Now choose a display option for the list ...</p>
+      <button type="submit" onclick="FizzBuzz()">FizzBuzz it</button>
+      <div id="result1">
+        <p>RESULT</p>
+        <p id="demo1"><span>?</span></p>
+      </div>
+    </div>
   </div>
   <img id="cat-image" src="meow.png" alt="Image of a cat saying meow">
   <div id="cat-text"><p><a href="https://applemoyse.dev/luna" target="_blank">LUNA</a> says hello.</p></div>
   <script src="script.js"></script>
+  <script src="exercises.js"></script>
 </body>
 </html>

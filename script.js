@@ -4,10 +4,17 @@ console.log(greeting);
 
 // Count the exercises and update the HTML
 function countExercises() {
-  const exercises = document.querySelectorAll('#terminal button').length;
-  document.getElementById("exercises-number").innerHTML = exercises + 3;
+  const exercises = document.querySelectorAll('#terminal button').length + document.querySelectorAll('#terminal1 button').length;
+  document.getElementById("exercises-number").innerHTML = exercises + 5;
 }
 countExercises();
+
+// Opens different tabs
+function openTerminal(displayId) {
+  document.getElementById("terminal1").style.display = "none";
+  document.getElementById("terminal").style.display = "none";
+  document.getElementById(displayId).style.display = "block";
+}
 
 // Checks if the value of the element with id "demo" is even or odd, and updates the innerHTML of an element with id "parity" accordingly.
 function updateParity(inputValue) {

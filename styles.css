@@ -50,17 +50,23 @@ a {
     align-items: center;
     margin-right: 3px;
   }
+  .window-tab:hover {
+    border-bottom: 2px solid var(--gray-text);
+  }
   #window-buttons button:hover {
     border: 2px solid transparent;
     cursor: default;
   }
-#terminal {
+#terminal, #terminal1 {
   background-color: #323232;
   border: 2px inset #444;
   /* box-shadow: -2px 2px 0 0 #f82f9a, 2px -2px 0 0 #14c1c1; */
   text-align: center;
   overflow-wrap: break-word;
 }
+  #terminal1 {
+    display: none;
+  }
 .query {
   display: inline-block;
   padding: 5px;
@@ -105,8 +111,8 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
-  button:hover {
-    border-bottom: 2px solid var(--gray-text);
+  #terminal > button:hover, #terminal1 > button:hover {
+    color: var(--highlighted-text);
   }
 
 #result {
