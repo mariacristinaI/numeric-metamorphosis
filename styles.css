@@ -82,7 +82,7 @@ input {
 input, #cat-text {
   background-color: #1414156b;
 }
-input, #cat-text, #demo {
+input, #cat-text, #demo, #demo1 {
   color: var(--highlighted-text);
 }
 input, #cat-text {

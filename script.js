@@ -15,6 +15,13 @@ function openTerminal(displayId) {
   document.getElementById("terminal").style.display = "none";
   document.getElementById(displayId).style.display = "block";
 }
+  document.getElementById("numbers-button").addEventListener("click", function() {
+    openTerminal('terminal');
+  });
+
+  document.getElementById("lists-button").addEventListener("click", function() {
+    openTerminal('terminal1');
+  });
 
 // Checks if the value of the element with id "demo" is even or odd, and updates the innerHTML of an element with id "parity" accordingly.
 function updateParity(inputValue) {
